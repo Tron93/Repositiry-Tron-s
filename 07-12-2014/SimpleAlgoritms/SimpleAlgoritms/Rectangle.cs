@@ -7,6 +7,15 @@ namespace SimpleAlgoritms
 {
     class Rectangle
     {
+        // Console in method code
+        // Environment.NewLine
+        // Variable naming
+        // Method should perform only one action
+        // Method naming
+        // using cleanup
+        // Math.Pow can be used
+        // class access modifier
+
         public static void SizesRectangle()
         {
             Console.Write("\nВведите через enter стороны прямоугольника(a,b): ");

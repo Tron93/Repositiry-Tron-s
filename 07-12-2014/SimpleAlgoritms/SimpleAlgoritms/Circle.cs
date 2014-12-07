@@ -5,6 +5,15 @@ using System.Text;
 
 namespace SimpleAlgoritms
 {
+    // Console in method code
+    // Environment.NewLine
+    // Variable naming
+    // Method should perform only one action
+    // Method naming
+    // using cleanup
+    // Math.Pow can be used
+    // class access modifier
+
     class Circle
     {
         public static void SquareCircle()

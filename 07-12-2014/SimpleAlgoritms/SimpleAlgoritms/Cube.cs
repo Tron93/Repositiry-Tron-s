@@ -5,6 +5,16 @@ using System.Text;
 
 namespace SimpleAlgoritms
 {
+    // Console in method code
+    // Environment.NewLine
+    // Excessive parentheses around Math.Pow
+    // Variable naming
+    // Method does two actions (actually more, taking Console into account) instead of one
+    // Method naming
+    // using cleanup
+    // Math.Pow can be used
+    // class access modifier
+
     class Cube
     {
         public static void VolumeCube()

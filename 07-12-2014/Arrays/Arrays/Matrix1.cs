@@ -5,6 +5,14 @@ using System.Text;
 
 namespace Arrays
 {
+    // Console in method code
+    // Variable naming
+    // Method should perform only one action
+    // Method naming
+    // using cleanup
+    // class access modifier
+    // <array>.GetLength(...) method
+
     class Matrix1
     {
         public static void massive()

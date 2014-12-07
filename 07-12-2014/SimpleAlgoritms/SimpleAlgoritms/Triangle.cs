@@ -5,6 +5,20 @@ using System.Text;
 
 namespace SimpleAlgoritms
 {
+    // Good job using helper methods!
+
+    // Console in methods code
+    // Environment.NewLine
+    // Variable naming
+    // Method should perform only one action
+    // Method naming
+    // using cleanup
+    // Math.Pow can be used
+    // class access modifier
+    // LINQ: Sum()
+    // Point - from System.Drawing or self-defined
+    // Duplicate code!!!
+
     class Triangle
     {
         private static double[] CalculateSides()
