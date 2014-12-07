@@ -1,27 +1,19 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace SimpleAlgoritms
 {
-    // Console in method code
-    // Environment.NewLine
-    // Variable naming
-    // Method should perform only one action
-    // Method naming
-    // using cleanup
-    // Math.Pow can be used
-    // class access modifier
-
-    class Circle
+    internal sealed class Circle
     {
-        public static void SquareCircle()
+        public static double CalculateSquareCircle(int lengthCircle)
         {
-            Console.Write("\nВвести длину окружности: ");
-            int LengthCircle = Convert.ToInt32(Console.ReadLine());
+            return (Math.Pow(lengthCircle, 2.0) / (4 * Math.PI)); // S = l^2 / (4*P)
+        }
 
-            Console.WriteLine("\nПлощадь окружности = {0}", ((LengthCircle * LengthCircle) / (4 * Math.PI)).ToString());  // S = l^2 / (4*P)
+        public static void PrintSquareCircle()
+        {
+            Console.Write(Environment.NewLine + "Ввести длину окружности: ");
+            int lengthCircle = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(Environment.NewLine + "Площадь окружности = {0}", CalculateSquareCircle(lengthCircle).ToString());
         }
     }
 }

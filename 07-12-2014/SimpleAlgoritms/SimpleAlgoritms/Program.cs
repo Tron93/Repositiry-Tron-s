@@ -11,7 +11,7 @@ namespace SimpleAlgoritms
         {
             Cube.VolumeCube();
 
-            Circle.SquareCircle();
+            Circle.PrintSquareCircle();
 
             Triangle.SquareAndPerimetr();
 

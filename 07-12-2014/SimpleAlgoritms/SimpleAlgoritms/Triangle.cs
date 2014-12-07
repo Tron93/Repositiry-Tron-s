@@ -56,7 +56,7 @@ namespace SimpleAlgoritms
         {
             double[] Sides = CalculateSides();
 
-            double p = (Sides[1] + Sides[2] + Sides[0]) / 2;
+            double p = (Sides.Sum()) / 2;
             double P_triangle = p * 2;
 
             double S_triangle = Math.Sqrt(p * (p - Sides[0]) * (p - Sides[1]) * (p - Sides[2]));
