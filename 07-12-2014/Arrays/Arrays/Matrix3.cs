@@ -16,7 +16,7 @@ namespace Arrays
             int n = int.Parse(Console.ReadLine());
 
             Random rand = new Random();
-            double[,] Mas = new double[m, n];
+            double[,] Mas = new double[m,n];
             double[] NewMas = new double[m];
 
             // заполнение массива
@@ -56,15 +56,16 @@ namespace Arrays
             Console.Write(" - произведение элементов строк\n");
 
 
+            NewMas = new double[m];
             for (int i = 0; i < m; i++)
             {
                 for (int j = 0; j < n; j++)
                 {
-                    count += Mas[i, j];
+                    NewMas[i] += Mas[i, j];
                 }
-                NewMas[i] = count;
-                Console.Write("{0}\t", (NewMas[i] / n).ToString("0.##"));
-                count = 0;
+
+                NewMas[i] /= n;
+                Console.Write("{0}\t", (NewMas[i]).ToString("0.##"));
                 
             }
             Console.Write(" - ср.е арифм-кое элементов строк\n");

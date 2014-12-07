@@ -27,12 +27,29 @@ namespace Arrays
             Random rand = new Random();
             double[,] mas = new double[n, n];
 
+            ConsoleColor currentColor = Console.ForegroundColor;
             for (int i = 0; i < n; i++) // заполнение массива
             {
                 for (int j = 0; j < n; j++)
                 {
                     mas[i,j] = rand.Next(-5, 5);
+                    if (mas[i,j] == 0)
+                    {
+                        Console.ForegroundColor = ConsoleColor.Cyan;
+                    }
+                    if (i == j)
+                    {
+                        Console.ForegroundColor = ConsoleColor.Green;
+                    }
+                    if (j == n - 1 - i)
+                    {
+                        Console.ForegroundColor = ConsoleColor.Red;
+                    }
+
                     Console.Write("{0}\t", mas[i, j]);
+                    Console.ForegroundColor = currentColor;
+
+                    
                 }
                 Console.WriteLine("\n");
             }
@@ -68,9 +85,9 @@ namespace Arrays
             Console.WriteLine(count); // выше побочной диагонали
             count = 0;
 
-            for (int i = n - 1; i > 0; i++)
+            for (int i = n - 1; i > 0; i--)
             {
-                for (int j = n - 1; j < n - 1 - i; j--)
+                for (int j = n - 1; j > n - 1 - i; j--)
                 {
                     if (mas[i, j] == 0) count++;
                 }

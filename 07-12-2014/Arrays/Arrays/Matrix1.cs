@@ -19,7 +19,7 @@ namespace Arrays
         {
             int[,] mas = new int[10,12];
 
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < mas.GetLength(0); i++)
             {
                 for (int j = 0; j < 12; j++)
                 {
