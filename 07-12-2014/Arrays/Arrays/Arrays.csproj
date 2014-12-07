@@ -45,6 +45,9 @@
   <ItemGroup>
     <Compile Include="Matrix1.cs" />
     <Compile Include="Matrix2.cs" />
+    <Compile Include="Matrix3.cs" />
+    <Compile Include="Matrix4.cs" />
+    <Compile Include="Matrix5.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
