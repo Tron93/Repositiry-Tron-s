@@ -53,7 +53,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Calendar\Calendar.csproj">
-      <Project>{dc9080c7-46d0-402c-866a-9dc817ecfd9e}</Project>
+      <Project>{DC9080C7-46D0-402C-866A-9DC817ECFD9E}</Project>
       <Name>Calendar</Name>
     </ProjectReference>
   </ItemGroup>

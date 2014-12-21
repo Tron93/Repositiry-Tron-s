@@ -9,7 +9,7 @@ namespace Calendar
     {
         static void Main(string[] args)
         {
-            CalculateDate calk = new CalculateDate();
+            CalculateDate calk = new CalculateDate(new WriterFactory().CreateWriter());
             calk.StartCalculate();
 
             Console.ReadKey();
