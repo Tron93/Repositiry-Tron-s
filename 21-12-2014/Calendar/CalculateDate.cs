@@ -33,16 +33,21 @@ namespace Calendar
         }
     }
 
-    public class CalculateDate: DateTime
+    public class CalculateDate//: DateTime
     {
+        // Assigned but never used
         DateTime date = new DateTime();
+
+        // Is this one really needed?
         private static IEnumerable<int> ListOfDay;
+
+        // Names
         private static readonly IEnumerable<int> ListOfDay2 = new List<int> { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
         private static readonly IEnumerable<int> ListOfDay3 = new List<int> { 31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
 
+        // Labels are bad (most of the time)
         public void StartCalculate()
         {
-            
             m: Console.WriteLine("Введите год");
             int year = int.Parse(Console.ReadLine());
             CalculateYear(year);
@@ -87,6 +92,10 @@ namespace Calendar
             return new DayOfMonth((Month)monthNumber, dayCounter);
         }
 
+        // Console?
+        // Not very good name for this method
+        // Can get rid of else branch
+        // Why return here?
         public static IEnumerable<int> CalculateYear(int year)
         {
             if (year % 4 == 0 & (year % 100 != 0 | year % 400 == 0))
